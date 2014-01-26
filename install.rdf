@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>fixNoRemote@infocatcher</em:id>
+		<em:type>2</em:type>
+		<em:bootstrap>true</em:bootstrap>
+		<em:name>Fix No Remote</em:name>
+		<em:version>0.1.0</em:version>
+		<em:description>Removes MOZ_NO_REMOTE environment variable to not share it with launched applications (e.g. to launch normal Firefox from Thunderbird, that was launched with -no-remote argument)</em:description>
+		<em:creator>Infocatcher</em:creator>
+		<em:updateURL>http://infocatcher.ucoz.net/ext/fx/fix_no_remote/update.rdf</em:updateURL>
+		<em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLgtEbrhCdZetIAanFNvkT441WwBgXcg1Zzlo5s5
+		              j9VLByj/L6UXAVqSria1dejjkKfxVbRXvqalJ7mENRambKpZ4AfV3dBCKUDjME56CMaAK7+DxMqaM3
+		              KEDKXn8XfqL2qkFsgcVjqh6AfltKRcyLGkU9+YQ82EXo6xm47hywoQIDAQAB</em:updateKey>
+
+		<em:targetApplication> <!-- Any Gecko-based application -->
+			<Description>
+				<em:id>toolkit@mozilla.org</em:id>
+				<em:minVersion>2.0</em:minVersion>
+				<em:maxVersion>29.0a1</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+		<em:localized>
+			<Description>
+				<em:locale>en-US</em:locale>
+				<em:name>Fix No Remote</em:name>
+				<em:description>Removes MOZ_NO_REMOTE environment variable to not share it with launched applications (e.g. to launch normal Firefox from Thunderbird, that was launched with -no-remote argument)</em:description>
+				<em:creator>Infocatcher</em:creator>
+			</Description>
+		</em:localized>
+
+		<em:localized>
+			<Description>
+				<em:locale>ru</em:locale>
+				<em:name>Fix No Remote</em:name>
+				<em:description>Удаляет переменную окружения MOZ_NO_REMOTE, чтобы она не наследовалась запускаемыми приложениями (например, чтобы запустить обычный Firefox из Thunderbird, запущенного с параметром -no-remote)</em:description>
+				<em:creator>Infocatcher</em:creator>
+			</Description>
+		</em:localized>
+
+	</Description>
+</RDF>
