@@ -1,0 +1,2 @@
+Extension for Firefox, SeaMonkey, Thunderbird and other Gecko-based applications.
+<br>Removes `MOZ_NO_REMOTE` environment variable to not share it with launched applications (e.g. to launch normal Firefox from Thunderbird, that was launched with -no-remote argument).
